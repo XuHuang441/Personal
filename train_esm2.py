@@ -88,7 +88,7 @@ def main():
         per_device_eval_batch_size=32,
         num_train_epochs=3,              # 3个 Epoch 足够收敛
         weight_decay=0.01,
-        evaluation_strategy="epoch",     # 每个 Epoch 结束后评估一次
+        eval_strategy="epoch",     # 每个 Epoch 结束后评估一次
         save_strategy="epoch",           # 每个 Epoch 保存一次模型
         save_total_limit=2,              # 只保留最近的2个模型，节省硬盘
         load_best_model_at_end=True,
