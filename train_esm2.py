@@ -8,9 +8,9 @@ from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 import wandb
 
 # ================= 配置路径 =================
-TRAIN_FILE = "/Users/huangxu/Library/CloudStorage/OneDrive-个人/phd/PKU/Yang Bai/crbc/esm2_phylum_dataset/train.tsv"
-TEST_FILE  = "/Users/huangxu/Library/CloudStorage/OneDrive-个人/phd/PKU/Yang Bai/crbc/esm2_phylum_dataset/test.tsv"
-MODEL_CHECKPOINT = "facebook/esm2_t30_150M_UR50D"
+TRAIN_FILE = "/hai/scratch/fangwu97/xu/Personal/data/esm2_phylum_dataset/train.tsv"
+TEST_FILE  = "/hai/scratch/fangwu97/xu/Personal/data/esm2_phylum_dataset/test.tsv"
+MODEL_CHECKPOINT = "/hai/scratch/fangwu97/xu/cache/esm2_t30_150M_UR50D"
 
 # WandB 项目名称
 WANDB_PROJECT = "esm2-phylum-finetune"
