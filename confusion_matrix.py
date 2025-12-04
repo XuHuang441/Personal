@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
 from sklearn.metrics import confusion_matrix
 import torch
+import numpy as np
+
 
 # 1. 加载你训练好的模型
 model_path = "./esm2_phylum_finetuned_final"  # 你的模型保存路径
