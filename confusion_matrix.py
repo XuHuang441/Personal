@@ -17,8 +17,7 @@ test_file = "/hai/scratch/fangwu97/xu/Personal/data/esm2_phylum_dataset/test.tsv
 df_test = pd.read_csv(test_file, sep='\t')
 
 # 为了展示快一点，我们只随机抽 1000 条测试数据（如果机器快可以用全部）
-# df_sample = df_test.sample(1000, random_state=42)
-df_sample = df_test
+df_sample = df_test.sample(1000, random_state=42)
 
 print("Running inference...")
 # 获取预测结果
